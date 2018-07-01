@@ -16,6 +16,19 @@ h2:first-of-type {
     margin-top: 0.5em;
 }
 
+p {
+  margin: 0;
+}
+
+#input_height, #input_width {
+  margin-bottom: 20px;
+}
+
+.contained_table {
+  width: 100%;
+  overflow-x: auto;
+}
+
 table,
 tr,
 td {
@@ -32,9 +45,15 @@ tr {
 }
 
 td {
-    width: 20px;
+    min-width: 20px;
 }
 
 input[type=number] {
     width: 6em;
+}
+
+@media screen and (max-width: 374px) {
+  h1 {
+    font-size: 30px;
+  }
 }
